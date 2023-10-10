@@ -15,6 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+          // "builder": "@angular-devkit/build-angular:browser",
           "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/rpg-place-frontend-shell",
@@ -24,7 +25,10 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "src/styles.scss"
+            ],
             "scripts": [],
             "extraWebpackConfig": "webpack.config.js",
             "commonChunk": false
@@ -58,6 +62,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
+          // "builder": "@angular-devkit/build-angular:browser",
           "builder": "ngx-build-plus:dev-server",
           "configurations": {
             "production": {
@@ -70,12 +75,13 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "port": 4200,
-            "publicHost": "http://localhost:4200",
+            "port": 8099,
+            "publicHost": "http://localhost:8099",
             "extraWebpackConfig": "webpack.config.js"
           }
         },
         "extract-i18n": {
+          // "builder": "@angular-devkit/build-angular:extract-i18n",
           "builder": "ngx-build-plus:extract-i18n",
           "options": {
             "browserTarget": "RpgPlace_frontend_shell:build",
@@ -89,7 +95,10 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "src/styles.scss"
+            ],
             "scripts": []
           }
         }

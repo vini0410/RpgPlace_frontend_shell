@@ -1,3 +1,4 @@
 {
-	"mfe1": "http://localhost:3000/remoteEntry.js"
+  "game": "http://localhost:8090/remoteEntry.js",
+  "pessoas": "http://localhost:8091/remoteEntry.js"
 }
