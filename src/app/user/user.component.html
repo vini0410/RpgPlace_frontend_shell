@@ -1,0 +1,11 @@
+<div *ngIf="userLogged; else userNotLogged">
+  <img class="user" src="assets/icons/usuario.png" (click)="LogOutUser()" />
+</div>
+<ng-template #userNotLogged>
+  <div class="md:flex">
+    <button mat-raised-button color="primary" routerLink="/login">Login</button>
+    <button mat-raised-button color="accent" routerLink="/register">
+      Register
+    </button>
+  </div>
+</ng-template>

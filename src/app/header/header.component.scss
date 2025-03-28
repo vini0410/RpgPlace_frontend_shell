@@ -1,0 +1,28 @@
+.div-home {
+  display: flex;
+  align-items: center;
+  a {
+    margin: 10px;
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+  }
+}
+
+.home-img {
+  width: 80px;
+  height: 80px;
+}
+
+.title {
+  position: fixed;
+  top: 10;
+  left: 47%;
+  p {
+    font-size: max(20px, 1.5vw);
+  }
+}
+
+.userArea {
+  // margin: 0%;
+  // margin-top: 0%;
+}
